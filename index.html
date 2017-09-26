@@ -1,0 +1,21 @@
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='trackingMethod: best;'>
+            <a-anchor hit-testing-enabled='true' preset="hiro">
+                  <!-- rotation=90 to make level with square and 180 to rotate correctly -->
+                  <!-- position puts it ontop of the square -->
+                  <a-box position='0 -0.5 0' material='opacity: 0.5;'>
+                        <a-image rotation="90 180 0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kitten_in_Rizal_Park%2C_Manila.jpg/1200px-Kitten_in_Rizal_Park%2C_Manila.jpg"></a-image>
+                  </a-box>
+
+                  <!-- <a-image src="https://static1.squarespace.com/static/54e8ba93e4b07c3f655b452e/t/56c2a04520c64707756f4267/1493764650017/"></a-image> -->
+            </a-anchor>
+		<a-camera-static material="" camera="" preset='hiro'></a-camera-static>
+	</a-scene>
+</body>
+
+
+<!-- link to 3x3 barcodes -->
+<!-- https://github.com/artoolkit/artoolkit5/tree/master/doc/patterns/Matrix%20code%203x3%20(72dpi) -->
